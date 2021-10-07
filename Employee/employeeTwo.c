@@ -33,7 +33,7 @@ static int compareEmployeePhone(const void *targetPtr, PtrToConstEmployee tableV
 
 static int compareEmployeeSalary(const void *targetPtr, PtrToConstEmployee tableValuePtr)
 {
-   return * (long *) targetPtr != tableValuePtr->salary;
+   return * (double *) targetPtr != tableValuePtr->salary;
 }
 
 PtrToEmployee searchEmployeeByNumber(PtrToConstEmployee ptr, int size, long number)
